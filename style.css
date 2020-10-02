@@ -3,6 +3,8 @@
 * {
   font-family: 'Manrope', sans-serif;
   font-size: 13px;
+  margin: 0px;
+  padding: 0px;
 }
 
 :root {
@@ -10,4 +12,131 @@
   --desaturated-dark-blue: hsl(214, 17%, 51%);
   --grayish-blue: hsl(212, 23%, 69%);
   --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+.container {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grayish-blue);
+}
+
+.card {
+  display: flex;
+  width: 700px;
+  height: 270px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 25px rgba(0,0,0,0.2);
+}
+
+.illustration-image {
+  object-fit: cover;
+  width: 20vw;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-infos {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-infos h3 {
+  font-size: 20px;
+  color: var(--very-dark-grayish-blue);
+  justify-content: center;
+}
+
+.infop {
+  color: var(--desaturated-dark-blue);
+  margin: 10px 0;
+}
+
+.credits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.name-date {
+  margin-left: 15px;
+}
+
+.name-date h6 {
+  color: var(--very-dark-grayish-blue);
+}
+
+.name-date date {
+  color: var(--desaturated-dark-blue);
+}
+
+.righting-infos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sharing-btn {
+  color: var(--desaturated-dark-blue);
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--light-grayish-blue);
+}
+
+.sharing-btn:hover {
+  color: white;
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.share-section {
+  position: relative;
+}
+
+.sharing-pannel {
+  position: absolute;
+  bottom: 50px;
+  right: -125px;
+  width: 270px;
+  height: 60px;
+  border-radius: 10px;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  color: var(--light-grayish-blue);
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.sharing-pannel p {
+  letter-spacing: 6px;
+}
+
+.social-link {
+  color: white;
+  font-size: 20px;
+}
+
+.social-link:hover {
+  color : var(--light-grayish-blue);
+}
+
+.triangle {
+  clip-path: polygon(100% 0, 0 0, 50% 75%);
+  background-color: var(--very-dark-grayish-blue);
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 120px;
+  top: 59px;
 }
