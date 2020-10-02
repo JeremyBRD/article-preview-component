@@ -140,3 +140,23 @@
   left: 120px;
   top: 59px;
 }
+
+/* .invisible-element {
+  display: none;
+  width: 280px;
+  height: 64px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 48px;
+  right: -130px;
+}
+
+.invisible-square {
+  display: none;
+  width: 30px;
+  height: 29px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 26px;
+  right: 0px;
+} */
