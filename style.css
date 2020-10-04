@@ -163,24 +163,30 @@
 } */
 
 @media (max-width: 900px) {
+
   .container {
     max-width: 100vw;
-    padding: 30px;
   }
 
   .illustration-image {
     object-fit: cover;
-    width: 100vw;
+    width: 90vw;
     border-radius: 10px 10px 0 0;
   }
 
   .card {
     flex-direction: column;
     height: fit-content;
+    width: 90vw;
   }
   .sharing-btn {
     /* z-index to be on the top of the container div for JS function displayPannelModileVp */
     z-index: 1;
+  }
+
+  .sharing-btn:hover {
+    background-color: var(--light-grayish-blue);
+    color : var(--very-dark-grayish-blue);
   }
 
   .sharing-pannel {
